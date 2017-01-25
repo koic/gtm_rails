@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    gtm_rails (0.1.0)
+    gtm_rails (0.1.2)
 
 GEM
   remote: https://rubygems.org/
