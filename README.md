@@ -45,15 +45,15 @@ In view, use as follows. The argument is a label name specified in `config/googl
 <%= google_tag_manager(:foo) %>
 ```
 
-Or do next 2 steps. (recommended)
+Or do next 2 steps. (recommended, click here to [read more](https://developers.google.com/tag-manager/quickstart))
 
-1. Following method as close to the opening `<head>` tag as possible on every page of your website.
+First, following method as close to the opening `<head>` tag as possible on every page of your website.
 
 ```ruby
 <%= google_tag_manager_script_tag(:foo) %>
 ```
 
-2. Following method immediately after the opening `<body>` tag on every page of your website.
+Second, following method immediately after the opening `<body>` tag on every page of your website.
 
 ```ruby
 <%= google_tag_manager_noscript_tag(:foo) %>
