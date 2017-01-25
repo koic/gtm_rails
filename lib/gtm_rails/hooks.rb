@@ -5,7 +5,7 @@ module GtmRails
 
       loader = ::GtmRails::YamlLoader.new
 
-      GtmRails::Config.gtm = (loader.load[Rails.env] || {}).with_indifferent_access
+      GtmRails::Config.container_ids = (loader.load[Rails.env] || {}).with_indifferent_access
 
       ActionView::Base.send :include, GtmRails::Helper
     end
