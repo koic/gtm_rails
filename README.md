@@ -37,7 +37,7 @@ production:
   baz: GTM-YourGtmId6
 ```
 
-The above is a sample. `foo`, `bar`, `baz` are arbitrary label names.
+The above is a sample. `foo`, `bar`, `baz` are arbitrary label names, and replacing GTM-XXXX with your container ID.
 
 In view, use as follows. The argument is a label name specified in `config/google_tag_manager.yml`.
 
@@ -45,7 +45,7 @@ In view, use as follows. The argument is a label name specified in `config/googl
 <%= google_tag_manager(:foo) %>
 ```
 
-Google Tag Manager container snippet expands to RAILS_ENV and label name. If there is no match, a blank is returned.
+Google Tag Manager container snippet will be expanded based on `Rails.env` and label name. If there is no match, a blank string is returned.
 
 ## Contributing
 
