@@ -10,7 +10,7 @@ describe GtmRails::Helper, type: :helper do
 
     subject { helper.google_tag_manager(:foo) }
 
-    it { puts Rails.root + "***" ; is_expected.to eq <<-EOS.strip_heredoc }
+    it { is_expected.to eq <<-EOS.strip_heredoc }
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=#{gtm}"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
