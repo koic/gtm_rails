@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    gtm_rails (0.2.1)
+    gtm_rails (0.3.0)
       rails (>= 4.1.0)
 
 GEM
