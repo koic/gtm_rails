@@ -5,7 +5,7 @@ module GtmRails
 
       loader = ::GtmRails::YamlLoader.new
 
-      gtms = loader.load.fetch(ENV['RAILS_ENV'] || 'development') || []
+      gtms = loader.load[(ENV['RAILS_ENV'] || 'development')] || []
 
       GtmRails::Config.gtm = gtms.each_with_object({}.with_indifferent_access) {|gtm, ret|
         ret[gtm.keys.first] = gtm.values.first
