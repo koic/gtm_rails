@@ -25,7 +25,5 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 2.2.2'
 
-  s.add_development_dependency('rails', '>= 4.2.0')
-  s.add_development_dependency('rspec-rails', '>= 3.0.0')
-  s.add_development_dependency('sqlite3')
+  s.add_dependency('rails', '>= 4.2.0')
 end
