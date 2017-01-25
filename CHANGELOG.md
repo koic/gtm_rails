@@ -1,6 +1,7 @@
 ## 0.2.0 (Unreleased)
 
 - __BREAKING CHANGE__ Refine config/google_tag_manager.yml format
+- Support Rails 4.1.x
 
 ## 0.1.2 (2017-01-25)
 
