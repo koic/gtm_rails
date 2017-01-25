@@ -1,3 +1,7 @@
+## 0.3.0 (Unreleased)
+
+- Added ability to set script tag and noscript tag individually.
+
 ## 0.2.1 (2017-02-26)
 
 - Fix bug: Use `Rails.env` instead of `ENV['RAILS_ENV']`
