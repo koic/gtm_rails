@@ -1,3 +1,7 @@
+## 0.2.1 (2017-02-26)
+
+- Fix bug: Use `Rails.env` instead of `ENV['RAILS_ENV']`
+
 ## 0.2.0 (2017-02-26)
 
 - __BREAKING CHANGE__ Refine config/google_tag_manager.yml format
