@@ -5,11 +5,7 @@ module GtmRails
 
       loader = ::GtmRails::YamlLoader.new
 
-      gtms = loader.load[ENV['RAILS_ENV']] || []
-
-      GtmRails::Config.gtm = gtms.each_with_object({}.with_indifferent_access) {|gtm, ret|
-        ret[gtm.keys.first] = gtm.values.first
-      }
+      GtmRails::Config.gtm = (loader.load[ENV['RAILS_ENV']] || {}).with_indifferent_access
 
       ActionView::Base.send :include, GtmRails::Helper
     end

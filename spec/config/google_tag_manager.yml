@@ -1,9 +1,9 @@
 test:
-  - foo: GTM-XXXX
-  - bar: GTM-YYYY
+  foo: GTM-XXXX
+  bar: GTM-YYYY
 development:
-  - foo: GTM-XXYY
-  - bar: GTM-YYZZ
+  foo: GTM-XXYY
+  bar: GTM-YYZZ
 production:
-  - foo: GTM-XXZZ
-  - bar: GTM-ZZZZ
+  foo: GTM-XXZZ
+  bar: GTM-ZZZZ

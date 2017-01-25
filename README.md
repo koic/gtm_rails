@@ -28,13 +28,13 @@ Create `config/google_tag_manager.yml` in your Rails application.
 
 ```yaml
 staging:
-  - foo: GTM-YourGtmId1
-  - bar: GTM-YourGtmId2
-  - baz: GTM-YourGtmId3
+  foo: GTM-YourGtmId1
+  bar: GTM-YourGtmId2
+  baz: GTM-YourGtmId3
 production:
-  - foo: GTM-YourGtmId4
-  - bar: GTM-YourGtmId5
-  - baz: GTM-YourGtmId6
+  foo: GTM-YourGtmId4
+  bar: GTM-YourGtmId5
+  baz: GTM-YourGtmId6
 ```
 
 The above is a sample. `foo`, `bar`, `baz` are arbitrary label names.
