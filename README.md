@@ -27,7 +27,7 @@ $ gem install gtm_rails
 Create `config/google_tag_manager.yml` in your Rails application.
 
 ```yaml
-development:
+staging:
   - foo: GTM-YourGtmId1
   - bar: GTM-YourGtmId2
   - baz: GTM-YourGtmId3
