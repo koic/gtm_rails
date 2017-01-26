@@ -39,13 +39,7 @@ production:
 
 The above is a sample. `foo`, `bar`, `baz` are arbitrary label names, and replacing GTM-XXXX with your container ID.
 
-In view, use as follows. The argument is a label name specified in `config/google_tag_manager.yml`.
-
-```ruby
-<%= google_tag_manager(:foo) %>
-```
-
-Or do next 2 steps. (recommended, click here to [read more](https://developers.google.com/tag-manager/quickstart))
+In view, use two helper methods. (Click here to [read more](https://developers.google.com/tag-manager/quickstart))
 
 First, following method as close to the opening `<head>` tag as possible on every page of your website.
 
@@ -58,6 +52,8 @@ Second, following method immediately after the opening `<body>` tag on every pag
 ```ruby
 <%= google_tag_manager_noscript_tag(:foo) %>
 ```
+
+These method arguments are a label name specified in `config/google_tag_manager.yml`.
 
 Google Tag Manager container snippet will be expanded based on `Rails.env` and label name. If there is no match, a blank string is returned.
 
