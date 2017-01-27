@@ -1,6 +1,8 @@
 module GtmRails
   module Helper
     def google_tag_manager(label)
+      ActiveSupport::Deprecation.warn('`google_tag_manager` is deprecated and will be removed in gtm_rails (0.4.0) . Use `google_tag_manager_script_tag` and `google_tag_manager_noscript_tag` instead of `google_tag_manager`.')
+
       container_id = GtmRails::Config.container_ids[label]
 
       return '' if container_id.blank?

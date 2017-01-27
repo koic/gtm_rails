@@ -1,3 +1,7 @@
+## 0.3.1 (Unreleased)
+
+- `google_tag_manager` is obsoleted method.
+
 ## 0.3.0 (2017-02-26)
 
 - Added ability to set script tag and noscript tag individually.
