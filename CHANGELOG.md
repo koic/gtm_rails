@@ -2,15 +2,15 @@
 
 - `google_tag_manager` is obsoleted method.
 
-## 0.3.0 (2017-02-26)
+## 0.3.0 (2017-01-26)
 
 - Added ability to set script tag and noscript tag individually.
 
-## 0.2.1 (2017-02-26)
+## 0.2.1 (2017-01-26)
 
 - Fix bug: Use `Rails.env` instead of `ENV['RAILS_ENV']`
 
-## 0.2.0 (2017-02-26)
+## 0.2.0 (2017-01-26)
 
 - __BREAKING CHANGE__ Refine config/google_tag_manager.yml format
 - Support Rails 4.1.x
