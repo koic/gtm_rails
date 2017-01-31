@@ -1,4 +1,4 @@
-## 0.3.1 (Unreleased)
+## 0.3.1 (2017-01-31)
 
 - `google_tag_manager` is obsoleted method.
 
