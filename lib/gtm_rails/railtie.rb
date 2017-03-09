@@ -1,3 +1,5 @@
+# -*- frozen-string-literal: true -*-
+
 module GtmRails
   class Railtie < ::Rails::Railtie
     initializer 'gtm_rails.initialize' do

@@ -1,3 +1,5 @@
+# -*- frozen-string-literal: true -*-
+
 module GtmRails
   class Hooks
     def self.init

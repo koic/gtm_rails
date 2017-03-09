@@ -1,3 +1,5 @@
+# -*- frozen-string-literal: true -*-
+
 describe GtmRails::Helper, type: :helper do
   before do
     allow(Rails).to receive(:root) { Pathname('spec') }

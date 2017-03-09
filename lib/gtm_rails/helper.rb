@@ -1,3 +1,5 @@
+# -*- frozen-string-literal: true -*-
+
 module GtmRails
   module Helper
     def google_tag_manager(label)
