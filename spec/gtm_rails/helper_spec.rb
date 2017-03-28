@@ -31,7 +31,7 @@ describe GtmRails::Helper, type: :helper do
     context 'container id is not set' do
       let(:gtm_key) { :baz }
 
-      it { is_expected.to be_blank }
+      it { is_expected.to eq '' }
     end
   end
 
@@ -55,7 +55,7 @@ describe GtmRails::Helper, type: :helper do
     context 'container id is not set' do
       let(:gtm_key) { :baz }
 
-      it { is_expected.to be_blank }
+      it { is_expected.to eq '' }
     end
   end
 
@@ -76,7 +76,7 @@ describe GtmRails::Helper, type: :helper do
     context 'container id is not set' do
       let(:gtm_key) { :baz }
 
-      it { is_expected.to be_blank }
+      it { is_expected.to eq '' }
     end
   end
 end
