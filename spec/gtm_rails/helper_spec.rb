@@ -10,9 +10,11 @@ describe GtmRails::Helper, type: :helper do
   let(:container_id) { 'GTM-XXXX' }
 
   describe '#google_tag_manager_tag' do
-    subject { helper.google_tag_manager(:foo) }
+    subject { helper.google_tag_manager(gtm_key) }
 
     context 'container id is set' do
+      let(:gtm_key) { :foo }
+
       it { is_expected.to eq <<-EOS.strip_heredoc }
         <!-- Google Tag Manager -->
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id=#{container_id}"
@@ -25,12 +27,20 @@ describe GtmRails::Helper, type: :helper do
         <!-- End Google Tag Manager -->
       EOS
     end
+
+    context 'container id is not set' do
+      let(:gtm_key) { :baz }
+
+      it { is_expected.to be_blank }
+    end
   end
 
   describe '#google_tag_manager_script_tag' do
-    subject { helper.google_tag_manager_script_tag(:foo) }
+    subject { helper.google_tag_manager_script_tag(gtm_key) }
 
     context 'container id is set' do
+      let(:gtm_key) { :foo }
+
       it { is_expected.to eq <<-EOS.strip_heredoc }
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -41,18 +51,32 @@ describe GtmRails::Helper, type: :helper do
         <!-- End Google Tag Manager -->
       EOS
     end
+
+    context 'container id is not set' do
+      let(:gtm_key) { :baz }
+
+      it { is_expected.to be_blank }
+    end
   end
 
   describe '#google_tag_manager_noscript_tag' do
-    subject { helper.google_tag_manager_noscript_tag(:foo) }
+    subject { helper.google_tag_manager_noscript_tag(gtm_key) }
 
     context 'container id is set' do
+      let(:gtm_key) { :foo }
+
       it { is_expected.to eq <<-EOS.strip_heredoc }
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=#{container_id}"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
       EOS
+    end
+
+    context 'container id is not set' do
+      let(:gtm_key) { :baz }
+
+      it { is_expected.to be_blank }
     end
   end
 end

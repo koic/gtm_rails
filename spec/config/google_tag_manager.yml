@@ -1,6 +1,7 @@
 test:
   foo: GTM-XXXX
   bar: GTM-YYYY
+  baz:
 development:
   foo: GTM-XXYY
   bar: GTM-YYZZ
