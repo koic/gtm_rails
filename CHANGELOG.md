@@ -1,3 +1,7 @@
+## 0.4.0 (Unreleased)
+
+- Remove `google_tag_manager` method. Use `google_tag_manager_script_tag` and `google_tag_manager_noscript_tag` instead of `google_tag_manager`.
+
 ## 0.3.1 (2017-01-31)
 
 - `google_tag_manager` is obsoleted method.
