@@ -1,4 +1,4 @@
-# gtm_rails [![Build Status](https://travis-ci.org/koic/gtm_rails.svg)](https://travis-ci.org/koic/gtm_rails) [![Gem Version](https://badge.fury.io/rb/gtm_rails.svg)](http://badge.fury.io/rb/gtm_rails)
+# gtm_rails [![Build Status](https://travis-ci.org/koic/gtm_rails.svg)](https://travis-ci.org/koic/gtm_rails) [![Gem Version](https://badge.fury.io/rb/gtm_rails.svg)](http://badge.fury.io/rb/gtm_rails) [![git.legal](https://git.legal/projects/3929/badge.svg "Number of libraries approved")](https://git.legal/projects/3929)
 
 Simply embed Google Tag Manager container snippet into Rails application.
 
