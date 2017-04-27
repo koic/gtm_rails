@@ -1,3 +1,7 @@
+## 0.5.0 (2017-04-27)
+
+- Fix JavaScript-escaped bug
+
 ## 0.4.0 (2017-04-22)
 
 - Remove `google_tag_manager` method. Use `google_tag_manager_script_tag` and `google_tag_manager_noscript_tag` instead of `google_tag_manager`.
