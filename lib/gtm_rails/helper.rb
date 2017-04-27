@@ -10,7 +10,7 @@ module GtmRails
 
       return '' if container_id.blank?
 
-      <<-HTML.html_safe.strip_heredoc
+      <<-HTML.strip_heredoc.html_safe
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -29,7 +29,7 @@ module GtmRails
 
       return '' if container_id.blank?
 
-      <<-HTML.html_safe.strip_heredoc
+      <<-HTML.strip_heredoc.html_safe
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=#{container_id}"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
