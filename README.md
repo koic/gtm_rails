@@ -39,12 +39,29 @@ production:
 
 The above is a sample. `foo`, `bar`, `baz` are arbitrary label names, and replacing GTM-XXXX with your container ID.
 
-In view, use two helper methods. (Click here to [read more](https://developers.google.com/tag-manager/quickstart))
+In view, use two helper methods.
+
+1. `google_tag_manager_script_tag(label_name)`
+2. `google_tag_manager_noscript_tag(label_name)`
+
+These method arguments are a label name specified in `config/google_tag_manager.yml`.
 
 First, following method as close to the opening `<head>` tag as possible on every page of your website.
 
 ```ruby
 <%= google_tag_manager_script_tag(:foo) %>
+```
+
+Google Tag Manager container snippet will be expanded based on `Rails.env` and label name. If there is no match, a blank string is returned.
+
+```javascript
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-YourGtmId1');</script>
+<!-- End Google Tag Manager -->
 ```
 
 Second, following method immediately after the opening `<body>` tag on every page of your website.
@@ -53,9 +70,16 @@ Second, following method immediately after the opening `<body>` tag on every pag
 <%= google_tag_manager_noscript_tag(:foo) %>
 ```
 
-These method arguments are a label name specified in `config/google_tag_manager.yml`.
-
 Google Tag Manager container snippet will be expanded based on `Rails.env` and label name. If there is no match, a blank string is returned.
+
+```javascript
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-YourGtmId1"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+```
+
+For more detailed GTM please click here to [read more](https://developers.google.com/tag-manager/quickstart).
 
 ## Contributing
 
