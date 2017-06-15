@@ -4,8 +4,8 @@ require 'singleton'
 
 module GtmRails
   class Config
-    include Singleton
+    include ActiveSupport::Configurable
 
-    cattr_accessor :container_ids
+    config_accessor :container_ids
   end
 end
