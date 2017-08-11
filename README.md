@@ -48,13 +48,13 @@ These method arguments are a label name specified in `config/google_tag_manager.
 
 First, following method as close to the opening `<head>` tag as possible on every page of your website.
 
-```ruby
+```erb
 <%= google_tag_manager_script_tag(:foo) %>
 ```
 
 Google Tag Manager container snippet will be expanded based on `Rails.env` and label name. If there is no match, a blank string is returned.
 
-```javascript
+```html
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -66,13 +66,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 Second, following method immediately after the opening `<body>` tag on every page of your website.
 
-```ruby
+```erb
 <%= google_tag_manager_noscript_tag(:foo) %>
 ```
 
 Google Tag Manager container snippet will be expanded based on `Rails.env` and label name. If there is no match, a blank string is returned.
 
-```javascript
+```html
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-YourGtmId1"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
