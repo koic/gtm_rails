@@ -13,13 +13,7 @@ gem 'gtm_rails'
 And then execute:
 
 ```
-$ bundle
-```
-
-Or install it yourself as:
-
-```
-$ gem install gtm_rails
+$ bundle install
 ```
 
 ## Configuration
