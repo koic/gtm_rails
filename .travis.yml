@@ -2,9 +2,9 @@ language: ruby
 sudo: false
 
 rvm:
-  - 2.2.8
-  - 2.3.5
-  - 2.4.2
+  - 2.2.9
+  - 2.3.6
+  - 2.4.3
   - ruby-head
 
 gemfile:
@@ -16,11 +16,11 @@ gemfile:
 
 matrix:
   allow_failures:
-    - rvm: 2.2.7
+    - rvm: 2.2.9
       gemfile: gemfiles/Gemfile-rails_edge
-    - rvm: 2.3.4
+    - rvm: 2.3.6
       gemfile: gemfiles/Gemfile-rails_edge
-    - rvm: 2.4.1
+    - rvm: 2.4.3
       gemfile: gemfiles/Gemfile-rails_edge
     - rvm: ruby-head
       gemfile: gemfiles/Gemfile-rails4.1.x
