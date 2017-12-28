@@ -8,6 +8,10 @@ rvm:
   - 2.5.0
   - ruby-head
 
+before_install:
+  - gem update --system
+  - gem update bundler
+
 gemfile:
   - gemfiles/Gemfile-rails4.1.x
   - gemfiles/Gemfile-rails4.2.x
