@@ -17,6 +17,7 @@ gemfile:
   - gemfiles/Gemfile-rails4.2.x
   - gemfiles/Gemfile-rails5.0.x
   - gemfiles/Gemfile-rails5.1.x
+  - gemfiles/Gemfile-rails5.2.x
   - gemfiles/Gemfile-rails_edge
 
 matrix:
@@ -37,5 +38,7 @@ matrix:
       gemfile: gemfiles/Gemfile-rails5.0.x
     - rvm: ruby-head
       gemfile: gemfiles/Gemfile-rails5.1.x
+    - rvm: ruby-head
+      gemfile: gemfiles/Gemfile-rails5.2.x
     - rvm: ruby-head
       gemfile: gemfiles/Gemfile-rails_edge
